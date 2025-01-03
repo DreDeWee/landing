@@ -1,17 +1,128 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Contractors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #00274d;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #004080;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .service {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #00274d;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quality Contractors</h1>
+        <p>Living life in Quality!</p>
+    </header>
 
-@import url("components/container.css")
-@import url("components/avator.css")
-@import url("components/button.css")
-@import url("components/banner.css")
-body {
-     font-family: 'lora' , serif;
-     font-size: 18px;
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
+    <div class="container">
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Electrical</h3>
+                </div>
+                <div class="service">
+                    <h3>Carpentry</h3>
+                </div>
+                <div class="service">
+                    <h3>Ceilings</h3>
+                </div>
+                <div class="service">
+                    <h3>Plumbing</h3>
+                </div>
+                <div class="service">
+                    <h3>Aluminium</h3>
+                </div>
+                <div class="service">
+                    <h3>Painting</h3>
+                </div>
+            </div>
+        </section>
 
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Quality Contractors is dedicated to delivering top-notch services for all your construction and renovation needs. With a focus on excellence, we ensure every project is completed to the highest standards.</p>
+        </section>
 
-}
-h1, h2, h3{
-font-family: 'roboto' , sans-serif;
-font font-weight: bold;
-}
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:DreDeWee@outlook.com">DreDeWee@outlook.com</a></p>
+            <p>Phone: <a href="tel:0766965394">076 696 5394</a></p>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Quality Contractors. All rights reserved.
+    </footer>
+</body>
+</html>
